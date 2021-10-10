@@ -11,6 +11,7 @@ class Person {
      
 }
 
+//  Person details 
 person1 = new Person("Mano","karan",21,9233244323,{city:"Trichy",state:"tamilnadu"});
 console.log(person1.address);
 console.log(person1.fname);
