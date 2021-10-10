@@ -5,12 +5,22 @@ class Movie{
         this.studio = studio;
         this.rating = rating;
     }
+    
+    
+//A method getPG, which takes an array of base type Movie as its argument
+    getPG(movie1){
+        let pgMov = new Movie[movie1.length];
+        let newArrayIndex = 0;
+        for (let i = 0; i < movie1.length; i++) {
+        if (movie1[i].rating.equals("PG")) {
+        pgMov[newArrayIndex] = movie1[i];
+        newArrayIndex++;
+        }
+        }
+        return pgMov;
+    };
 }
 
-//A method getPG, which takes an array of base type Movie as its argument
-getPG(moviesArray){
-  return moviesArray.filter( this.rating );
-}
 
 // piece of code that creates an instance of the class Movie
 movie1 = new Movie("Casino Royale","Eon Productions","PG13");
